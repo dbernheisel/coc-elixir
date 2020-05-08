@@ -22,7 +22,8 @@
     "coc": "^0.0.4"
   },
   "activationEvents": [
-    "onLanguage:elixir"
+    "onLanguage:elixir",
+    "onLanguage:eelixir"
   ],
   "contributes": {
     "rootPatterns": [

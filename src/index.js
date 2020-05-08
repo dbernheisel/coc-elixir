@@ -26,7 +26,12 @@ export function activate(context: ExtensionContext) {
   };
 
   const clientOptions = {
-    documentSelector: [{ language: 'elixir', scheme: 'file' }, { language: 'elixir', scheme: 'untitled' }],
+    documentSelector: [
+      { language: 'elixir', scheme: 'file' },
+      { language: 'elixir', scheme: 'untitled' },
+      { language: 'eelixir', scheme: 'file' },
+      { language: 'eelixir', scheme: 'untitled' }
+  ],
     synchronize: {
       configurationSection: 'elixirLS',
       fileEvents: [workspace.createFileSystemWatcher('**/*.{ex,exs,erl,yrl,xrl,eex,leex}')],
